@@ -18,7 +18,6 @@ $(document).ready(function() {
     // Set maximum values
     var maxHight = 100;
     var maxRadius = 140;
-38
     // Add mousemove event.
     $(document).on("mousemove", function(event) {
         // Get the menu objects
@@ -45,7 +44,7 @@ $(document).ready(function() {
                 // Fix the menu font-size
                 var menuHight = minHight + ((maxHight-minHight)-(((maxHight-minHight)/maxRadius) * radius));
                 // Change the menu object font-size
-                $(menuObject).css({"height" : menuHight+"px", "bottom" : "0px"});
+                $(menuObject).css({"height" : menuHight+"px"});
             }
         }  
     });
