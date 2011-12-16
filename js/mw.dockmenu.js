@@ -7,16 +7,16 @@
  * @copyright (c) 2011, Mikael Andersson. All Rights Reserved.  
  * @license : http://creativecommons.org/licenses/by-nc-sa/3.0/
  *
- * Last Updated: 2011-12-15
+ * Last Updated: 2011-12-16
  * INFO: Function for menu that mimics mac dock menu using images.
  * NOTE: Need jquery, test with jquery.1.7
 */
 
 $(document).ready(function() {
     // Set image standard size
-    var minHight = 62;
+    var minHeight = 62;
     // Set maximum values
-    var maxHight = 100;
+    var maxHeight = 100;
     var maxRadius = 140;
     // Add mousemove event.
     $(document).on("mousemove", function(event) {
@@ -42,9 +42,9 @@ $(document).ready(function() {
                     radius = maxRadius;
                 }
                 // Fix the menu images height.
-                var menuHight = minHight + ((maxHight-minHight)-(((maxHight-minHight)/maxRadius) * radius));
+                var menuHeight = minHeight + ((maxHeight-minHeight)-(((maxHeight-minHeight)/maxRadius) * radius));
                 // Change the menu object images height.
-                $(menuObject).css({"height" : menuHight+"px"});
+                $(menuObject).css({"height" : menuHeight+"px"});
             }
         }  
     });
