@@ -41,9 +41,9 @@ $(document).ready(function() {
                 if(radius>=maxRadius) {
                     radius = maxRadius;
                 }
-                // Fix the menu font-size
+                // Fix the menu images height.
                 var menuHight = minHight + ((maxHight-minHight)-(((maxHight-minHight)/maxRadius) * radius));
-                // Change the menu object font-size
+                // Change the menu object images height.
                 $(menuObject).css({"height" : menuHight+"px"});
             }
         }  
